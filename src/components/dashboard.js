@@ -196,7 +196,7 @@ const Dashboard = ({ navigation }) => {
   };
 
   const renderDashboard = ({ item }) => {
-    return <DashboardRender item={item} navigation={navigation}/>;
+    return <DashboardRender item={item} navigation={navigation} userId={userId}/>;
   };
 
   //events

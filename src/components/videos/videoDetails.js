@@ -36,7 +36,7 @@ const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 
 const VideoDetails = ({ navigation, route }) => {
-  const { item, id } = route.params;
+  const { item, id, userId } = route.params;
   const [video, setVideo] = useState([]);
   const [fullscreen, setFullscreen] = useState(false);
   const [error, setError] = useState(false);
@@ -44,14 +44,8 @@ const VideoDetails = ({ navigation, route }) => {
   const [loading, setLoading] = useState(false);
   const [comment, setComment] = useState("");
   const [textHeight, setTextHeight] = useState(0);
-  const [numberOfComments, setNumberOfComments] = useState(4);
-  const [comments, setComments] = useState([
-    { id: 1, userName: "John Doe", val: "A test Comment" },
-    { id: 2, userName: "John Doe", val: "A test Comment" },
-    { id: 3, userName: "John Doe", val: "A test Comment" },
-    { id: 4, userName: "John Doe", val: "A test Comment" },
-    { id: 5, userName: "John Doe", val: "A test Comment" },
-  ]);
+  const [numberOfComments, setNumberOfComments] = useState(0);
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     const getVideoDetails = async () => {
@@ -85,7 +79,72 @@ const VideoDetails = ({ navigation, route }) => {
     };
 
     getVideoDetails();
+    getCOmments();
   }, []);
+
+  const getCOmments = async () => {
+    setLoading(true);
+    const TOKEN = await AsyncStorage.getItem("userToken");
+    // console.log(userId);
+
+    const header = {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${TOKEN}`,
+    };
+
+    await fetch(
+      `http://ec2-52-53-161-255.us-west-1.compute.amazonaws.com/api/get_video_comment`,
+      {
+        method: "POST",
+        headers: header,
+        body: JSON.stringify({
+          video_id: id,
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        setLoading(false);
+        console.warn(result, "==comments");
+        setComments(result.data);
+        // console.log(result);
+      });
+  };
+
+  const postComments = async () => {
+    setLoading(true);
+    console.log(userId);
+    const TOKEN = await AsyncStorage.getItem("userToken");
+    // console.log(userId);
+
+    const header = {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${TOKEN}`,
+    };
+
+    await fetch(
+      `http://ec2-52-53-161-255.us-west-1.compute.amazonaws.com/api/video_comment_post`,
+      {
+        method: "POST",
+        headers: header,
+        body: JSON.stringify({
+          video_id: id,
+          user_id: userId,
+          comment: comment,
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        setLoading(false);
+        setComment("");
+        console.warn(result, "==commentsPOST");
+        getCOmments();
+        // console.log(result);
+      });
+  };
 
   const renderComment = ({ item }) => {
     return (
@@ -102,12 +161,12 @@ const VideoDetails = ({ navigation, route }) => {
           numberOfLines={1}
           style={{ fontSize: hp(2), color: "black", fontWeight: "bold" }}
         >
-          {item.userName}
+          {item.user_id}
         </Text>
         <Text
           style={{ fontSize: hp(2), color: "black", marginVertical: wp(2.5) }}
         >
-          {item.val}
+          {item.comment}
         </Text>
         <View style={{ flexDirection: "row", marginTop: wp(2.5) }}>
           <FontAwesome5
@@ -292,6 +351,7 @@ const VideoDetails = ({ navigation, route }) => {
             }}
           />
           <Pressable
+            onPress={() => postComments()}
             style={[
               {
                 width: wp(16),
@@ -332,14 +392,21 @@ const VideoDetails = ({ navigation, route }) => {
               style={{
                 fontWeight: "bold",
               }}
-            >{`(${numberOfComments})`}</Text>
+            >{`(${comments.length})`}</Text>
           </Text>
         </View>
-        <FlatList
-          data={comments}
-          renderItem={renderComment}
-          keyExtractor={(item, index) => index}
-        />
+        {comments.length > 0 ? (
+          <FlatList
+            data={comments.reverse()}
+            renderItem={renderComment}
+            keyExtractor={(item, index) => index}
+          />
+        ) : (
+          <Text style={{ textAlign: "center", marginVertical: wp(5) }}>
+            No comments.
+          </Text>
+        )}
+
         {/**Comments */}
         {/**Comments */}
         <View style={{ width: "100%", height: hp(10) }}></View>

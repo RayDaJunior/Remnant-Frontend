@@ -17,6 +17,7 @@ const DashboardRender = (props) => {
           onPress={() =>
             props.navigation.navigate("VideoDetails", {
               id: item.content_id,
+              userId: props.userId,
             })
           }
           style={styles.container}

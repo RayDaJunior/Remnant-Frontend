@@ -8,10 +8,6 @@
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
@@ -20,16 +16,8 @@
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -52,10 +40,6 @@
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-mdpi/src_assets_images_defaultvideo.png"
     },
     {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_assets_images_calendarsolid.png.flat",
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-mdpi/src_assets_images_calendarsolid.png"
     },
@@ -66,14 +50,6 @@
     {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-mdpi_src_assets_images_roundicon.png.flat",
         "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-mdpi/src_assets_images_roundicon.png"
-    },
-    {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
-        "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
-        "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
     },
     {
         "merged": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
