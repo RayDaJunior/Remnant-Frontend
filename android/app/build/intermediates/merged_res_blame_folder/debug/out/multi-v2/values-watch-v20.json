@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/archan/remnant/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/archan/.gradle/caches/transforms-3/0115e093205eb8728e9142a053793cb7/transformed/jetified-play-services-auth-20.2.0/res/values-watch-v20/values.xml",

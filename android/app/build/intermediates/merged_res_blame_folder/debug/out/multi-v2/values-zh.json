@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/archan/remnant/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
                     "source": "/Users/archan/.gradle/caches/transforms-3/0cf53388e3dd392b781d68a7358a0090/transformed/jetified-ucrop-2.2.6-native/res/values-zh/values-zh.xml",

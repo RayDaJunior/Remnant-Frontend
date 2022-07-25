@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/archan/remnant/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/archan/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/res/values-v23/values-v23.xml",

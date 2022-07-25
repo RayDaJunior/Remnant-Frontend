@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/archan/remnant/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/archan/.gradle/caches/transforms-3/90b499f7deaff462375db20e8c4533ee/transformed/jetified-firebase-messaging-19.0.0/res/values-pt-rPT/values.xml",

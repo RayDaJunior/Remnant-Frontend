@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/archan/remnant/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/archan/Remnant-Frontend-Archan/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
-                {
-                    "source": "/Users/archan/remnant/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "156,262",
-                        "endColumns": "63,68",
-                        "endOffsets": "215,326"
-                    },
-                    "to": {
-                        "startLines": "726,727",
-                        "startColumns": "4,4",
-                        "startOffsets": "46512,46576",
-                        "endColumns": "63,68",
-                        "endOffsets": "46571,46640"
-                    }
-                },
                 {
                     "source": "/Users/archan/.gradle/caches/transforms-3/19f285c5360101e74a65ffd2dd8f0c51/transformed/material-1.1.0/res/values/values.xml",
                     "from": {
@@ -169,25 +152,6 @@
                     }
                 },
                 {
-                    "source": "/Users/archan/remnant/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "264"
-                    },
-                    "to": {
-                        "startLines": "929",
-                        "startColumns": "4",
-                        "startOffsets": "68522",
-                        "endLines": "932",
-                        "endColumns": "12",
-                        "endOffsets": "68732"
-                    }
-                },
-                {
                     "source": "/Users/archan/.gradle/caches/transforms-3/d246f0d1a611e4ea2282943fbf088ffa/transformed/swiperefreshlayout-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -319,7 +283,7 @@
                     }
                 },
                 {
-                    "source": "/Users/archan/remnant/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -350,6 +314,23 @@
                         "startOffsets": "45090",
                         "endColumns": "53",
                         "endOffsets": "45139"
+                    }
+                },
+                {
+                    "source": "/Users/archan/Remnant-Frontend-Archan/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "156,262",
+                        "endColumns": "63,68",
+                        "endOffsets": "215,326"
+                    },
+                    "to": {
+                        "startLines": "726,727",
+                        "startColumns": "4,4",
+                        "startOffsets": "46512,46576",
+                        "endColumns": "63,68",
+                        "endOffsets": "46571,46640"
                     }
                 },
                 {
@@ -420,6 +401,25 @@
                         "startOffsets": "42512,42552,42986,43296,43351,44599,44653,44705,44754,44815",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "42547,42594,43024,43346,43393,44648,44700,44749,44810,44860"
+                    }
+                },
+                {
+                    "source": "/Users/archan/Remnant-Frontend-Archan/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "264"
+                    },
+                    "to": {
+                        "startLines": "929",
+                        "startColumns": "4",
+                        "startOffsets": "68522",
+                        "endLines": "932",
+                        "endColumns": "12",
+                        "endOffsets": "68732"
                     }
                 },
                 {

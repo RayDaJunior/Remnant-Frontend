@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-MERGED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/d28c9738e0be5fb2f452abe19a3ad1e0/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/3cdfe1d94f781b3cd4fe147ba3c7c694/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
-MERGED from [:react-native-async-storage_async-storage] /Users/archan/remnant/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_clipboard] /Users/archan/remnant/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-document-picker] /Users/archan/remnant/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] /Users/archan/remnant/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-33:12
-MERGED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
-MERGED from [:react-native-onesignal] /Users/archan/remnant/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-otp-verify] /Users/archan/remnant/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-safe-area-context] /Users/archan/remnant/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/archan/remnant/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-vector-icons] /Users/archan/remnant/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-async-storage_async-storage] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_clipboard] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-document-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-33:12
+MERGED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:react-native-onesignal] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-otp-verify] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-safe-area-context] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/archan/.gradle/caches/transforms-3/1eed3d8d6e8f118b544df7150c917187/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transforms-3/baca7c1f3f83a6f81158e3b4527503d3/transformed/jetified-OneSignal-4.7.3/AndroidManifest.xml:2:1-135:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/archan/.gradle/caches/transforms-3/b79d8bd305c4db607db6eab005acf43d/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -107,28 +107,28 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/archan/.gradle/caches/transforms-3/2e79bd92b8908357e4d9334a20ee7fe5/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/archan/.gradle/caches/transforms-3/b232a205ced66516aba7f645188ca8c4/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/archan/.gradle/caches/transforms-3/f1165b3f0730928c597e7ea26b1247fd/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:2:3-24
-		INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:2:3-24
-		INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transforms-3/baca7c1f3f83a6f81158e3b4527503d3/transformed/jetified-OneSignal-4.7.3/AndroidManifest.xml:16:5-67
@@ -136,21 +136,21 @@ MERGED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transfo
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/archan/.gradle/caches/transforms-3/9f8cd3592c7afae57c85119fbb090fbc/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/archan/.gradle/caches/transforms-3/9f8cd3592c7afae57c85119fbb090fbc/transformed/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.CAMERA
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:5:5-64
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:5:5-64
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:5:22-62
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:5:22-62
 application
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:7:5-27:19
-MERGED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:7:5-27:19
-MERGED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:7:5-27:19
-MERGED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-31:19
-MERGED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-31:19
-MERGED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
-MERGED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
-MERGED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
-MERGED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:7:5-27:19
+MERGED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:7:5-27:19
+MERGED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:7:5-27:19
+MERGED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-31:19
+MERGED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-31:19
+MERGED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/archan/.gradle/caches/transforms-3/1eed3d8d6e8f118b544df7150c917187/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/archan/.gradle/caches/transforms-3/1eed3d8d6e8f118b544df7150c917187/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:9:5-20
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transforms-3/baca7c1f3f83a6f81158e3b4527503d3/transformed/jetified-OneSignal-4.7.3/AndroidManifest.xml:48:5-133:19
@@ -196,87 +196,87 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/archan/.gradle/cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/archan/.gradle/caches/transforms-3/b5a8e99dac667ebea08e9f9757d3b404/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:10:7-39
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:10:7-39
 	tools:ignore
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:10:9-48
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:10:9-48
 	android:roundIcon
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:12:7-52
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:12:7-52
 	tools:targetApi
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:9:9-29
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:9:9-29
 	android:icon
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:11:7-41
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:11:7-41
 	android:allowBackup
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:13:7-34
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:14:7-38
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:14:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:8:7-42
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:8:7-42
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:9:7-38
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:9:7-38
 activity#com.remnant.MainActivity
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:15:7-26:18
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:15:7-26:18
 	android:label
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:launchMode
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:19:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:20:9-51
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:20:9-51
 	android:exported
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:21:9-32
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:21:9-32
 	android:configChanges
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:18:9-118
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:18:9-118
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:22:9-25:25
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:22:9-25:25
 action#android.intent.action.MAIN
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:23:13-65
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:23:21-62
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:23:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:24:13-73
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:24:13-73
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml:24:23-70
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml:24:23-70
 uses-sdk
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/d28c9738e0be5fb2f452abe19a3ad1e0/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/d28c9738e0be5fb2f452abe19a3ad1e0/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/3cdfe1d94f781b3cd4fe147ba3c7c694/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/archan/.gradle/caches/transforms-3/3cdfe1d94f781b3cd4fe147ba3c7c694/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
-MERGED from [:react-native-async-storage_async-storage] /Users/archan/remnant/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-async-storage_async-storage] /Users/archan/remnant/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_clipboard] /Users/archan/remnant/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_clipboard] /Users/archan/remnant/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-document-picker] /Users/archan/remnant/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-document-picker] /Users/archan/remnant/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /Users/archan/remnant/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] /Users/archan/remnant/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-onesignal] /Users/archan/remnant/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-onesignal] /Users/archan/remnant/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-otp-verify] /Users/archan/remnant/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-otp-verify] /Users/archan/remnant/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/archan/remnant/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/archan/remnant/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/archan/remnant/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/archan/remnant/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/archan/remnant/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/archan/remnant/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_clipboard] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_clipboard] /Users/archan/Remnant-Frontend-Archan/node_modules/@react-native-community/clipboard/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-document-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-document-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-document-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-onesignal] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-onesignal] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-onesignal/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-otp-verify] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-otp-verify] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-otp-verify/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/archan/.gradle/caches/transforms-3/1eed3d8d6e8f118b544df7150c917187/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.69.1] /Users/archan/.gradle/caches/transforms-3/1eed3d8d6e8f118b544df7150c917187/transformed/jetified-react-native-0.69.1-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transforms-3/baca7c1f3f83a6f81158e3b4527503d3/transformed/jetified-OneSignal-4.7.3/AndroidManifest.xml:4:5-44
@@ -451,82 +451,82 @@ MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/archan/.gradle/caches/tran
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/archan/.gradle/caches/transforms-3/b232a205ced66516aba7f645188ca8c4/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/archan/.gradle/caches/transforms-3/f1165b3f0730928c597e7ea26b1247fd/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/archan/.gradle/caches/transforms-3/f1165b3f0730928c597e7ea26b1247fd/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/archan/remnant/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:5:5-77
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:5:22-75
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:5:22-75
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:11:9-111
+ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:11:9-111
 	android:exported
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:11:84-108
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:11:84-108
 	android:name
-		ADDED from /Users/archan/remnant/android/app/src/debug/AndroidManifest.xml:11:19-83
+		ADDED from /Users/archan/Remnant-Frontend-Archan/android/app/src/debug/AndroidManifest.xml:11:19-83
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.125.0] /Users/archan/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 queries
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-73
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-73
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-70
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-70
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-81
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:22-78
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:22-78
 provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-26:20
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-26:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
 	android:authorities
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-60
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-60
 	android:exported
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-94
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-94
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:78
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:78
 	android:resource
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-75
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-75
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-67
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-67
 activity#com.yalantis.ucrop.UCropActivity
-ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-30:72
+ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-30:72
 	android:theme
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-69
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-69
 	android:name
-		ADDED from [:react-native-image-crop-picker] /Users/archan/remnant/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-60
+		ADDED from [:react-native-image-crop-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-60
 provider#com.imagepicker.ImagePickerProvider
-ADDED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+ADDED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+		ADDED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-71
+		ADDED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-71
 	android:exported
-		ADDED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+		ADDED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 	android:name
-		ADDED from [:react-native-image-picker] /Users/archan/remnant/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-63
+		ADDED from [:react-native-image-picker] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-63
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+ADDED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
-		ADDED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+		ADDED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 	android:authorities
-		ADDED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+		ADDED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
 	android:exported
-		ADDED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+		ADDED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 	android:name
-		ADDED from [:react-native-webview] /Users/archan/remnant/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+		ADDED from [:react-native-webview] /Users/archan/Remnant-Frontend-Archan/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
 permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:4.7.3] /Users/archan/.gradle/caches/transforms-3/baca7c1f3f83a6f81158e3b4527503d3/transformed/jetified-OneSignal-4.7.3/AndroidManifest.xml:7:5-9:47
 	android:protectionLevel
