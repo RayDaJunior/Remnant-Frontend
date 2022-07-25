@@ -34,8 +34,8 @@ const store = configureStore({
   },
 });
 
-const dummy = () =>{
-  
+const dummyone = () =>{
+
 }
 
 const App = () => {
