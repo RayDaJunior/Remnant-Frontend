@@ -34,6 +34,10 @@ const store = configureStore({
   },
 });
 
+const dummy = () =>{
+  
+}
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
