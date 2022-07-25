@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 import {
   Text,
   View,
@@ -12,43 +12,82 @@ import {
   FlatList,
   TextInput,
   TouchableOpacity,
-} from 'react-native';
-import CustomHeader from '../../constants/header';
-import CustomHeaderTwo from '../../constants/headerTwo';
-import Footer from '../footer';
-import MobileInput from '../../constants/mobileinput';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+  StatusBar,
+} from "react-native";
+import CustomHeader from "../../constants/header";
+import CustomHeaderTwo from "../../constants/headerTwo";
+import Footer from "../footer";
+import MobileInput from "../../constants/mobileinput";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
-import {useDispatch} from 'react-redux';
+import { useDispatch } from "react-redux";
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import {UPDATE_PAGE} from '../../store/actions/actions';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { UPDATE_PAGE } from "../../store/actions/actions";
 
-import Feather from 'react-native-vector-icons/Feather';
-import {wp, hp} from '../../constants/styled';
-import {ScrollView} from 'react-native-gesture-handler';
+import Feather from "react-native-vector-icons/Feather";
+import { wp, hp } from "../../constants/styled";
+import { ScrollView } from "react-native-gesture-handler";
+import VideoPlayer from "react-native-video-controls";
 
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
+const width = Dimensions.get("window").width;
+const height = Dimensions.get("window").height;
 
-const VideoDetails = ({navigation, route}) => {
-  const {item} = route.params;
+const VideoDetails = ({ navigation, route }) => {
+  const { item, id } = route.params;
+  const [video, setVideo] = useState([]);
+  const [fullscreen, setFullscreen] = useState(false);
+  const [error, setError] = useState(false);
   const [fullDes, setFullDes] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [comment, setComment] = useState('');
+  const [comment, setComment] = useState("");
   const [textHeight, setTextHeight] = useState(0);
   const [numberOfComments, setNumberOfComments] = useState(4);
   const [comments, setComments] = useState([
-    {id: 1, userName: 'John Doe', val: 'A test Comment'},
-    {id: 2, userName: 'John Doe', val: 'A test Comment'},
-    {id: 3, userName: 'John Doe', val: 'A test Comment'},
-    {id: 4, userName: 'John Doe', val: 'A test Comment'},
-    {id: 5, userName: 'John Doe', val: 'A test Comment'},
+    { id: 1, userName: "John Doe", val: "A test Comment" },
+    { id: 2, userName: "John Doe", val: "A test Comment" },
+    { id: 3, userName: "John Doe", val: "A test Comment" },
+    { id: 4, userName: "John Doe", val: "A test Comment" },
+    { id: 5, userName: "John Doe", val: "A test Comment" },
   ]);
 
-  const renderComment = ({item}) => {
+  useEffect(() => {
+    const getVideoDetails = async () => {
+      setLoading(true);
+      const TOKEN = await AsyncStorage.getItem("userToken");
+      // console.log(userId);
+
+      const header = {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${TOKEN}`,
+      };
+
+      await fetch(
+        `http://ec2-52-53-161-255.us-west-1.compute.amazonaws.com/api/video_description`,
+        {
+          method: "POST",
+          headers: header,
+          body: JSON.stringify({
+            id: id,
+          }),
+        }
+      )
+        .then((res) => res.json())
+        .then((result) => {
+          setLoading(false);
+          console.warn(result, "==des");
+          setVideo(result.data);
+          // console.log(result);
+        });
+    };
+
+    getVideoDetails();
+  }, []);
+
+  const renderComment = ({ item }) => {
     return (
       <View
         key={item.id}
@@ -56,29 +95,32 @@ const VideoDetails = ({navigation, route}) => {
           width: wp(85),
           paddingVertical: wp(5),
           borderBottomWidth: 1,
-          borderColor: 'rgba(0,0,0,0.25)',
-        }}>
+          borderColor: "rgba(0,0,0,0.25)",
+        }}
+      >
         <Text
           numberOfLines={1}
-          style={{fontSize: hp(2), color: 'black', fontWeight: 'bold'}}>
+          style={{ fontSize: hp(2), color: "black", fontWeight: "bold" }}
+        >
           {item.userName}
         </Text>
         <Text
-          style={{fontSize: hp(2), color: 'black', marginVertical: wp(2.5)}}>
+          style={{ fontSize: hp(2), color: "black", marginVertical: wp(2.5) }}
+        >
           {item.val}
         </Text>
-        <View style={{flexDirection: 'row', marginTop: wp(2.5)}}>
+        <View style={{ flexDirection: "row", marginTop: wp(2.5) }}>
           <FontAwesome5
             name="pen"
-            color={'#F9AD19'}
+            color={"#F9AD19"}
             size={hp(2)}
-            style={{marginRight: wp(5)}}
+            style={{ marginRight: wp(5) }}
           />
           <FontAwesome5
             name="trash"
-            color={'#F9AD19'}
+            color={"#F9AD19"}
             size={hp(2)}
-            style={{marginRight: wp(5)}}
+            style={{ marginRight: wp(5) }}
           />
         </View>
       </View>
@@ -87,21 +129,23 @@ const VideoDetails = ({navigation, route}) => {
 
   return (
     <>
+      {fullscreen && <StatusBar hidden={true} />}
       {loading && (
         <View
           style={{
-            position: 'absolute',
+            position: "absolute",
             width: wp(100),
             height: hp(100),
             top: 0,
             left: 0,
             flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: 'rgba(0,0,0,0.3)',
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "rgba(0,0,0,0.3)",
             zIndex: 1,
-          }}>
-          <ActivityIndicator size={'large'} />
+          }}
+        >
+          <ActivityIndicator size={"large"} />
         </View>
       )}
       <ScrollView
@@ -109,10 +153,11 @@ const VideoDetails = ({navigation, route}) => {
           width: width,
           minHeight: height,
           // justifyContent: 'center',
-          alignItems: 'center',
-        }}>
+          alignItems: "center",
+        }}
+      >
         <CustomHeader
-          title={'Video'}
+          title={"Video"}
           // backbutton={false}
           navigation={navigation}
         />
@@ -120,24 +165,84 @@ const VideoDetails = ({navigation, route}) => {
         {/**video */}
         {/**video */}
         {/* {console.log(item.thumbnail)} */}
-        <Image
-          style={{width: '100%', height: hp(30)}}
-          source={{uri: item.thumbnail}}
-        />
+        <View
+          style={[
+            { width: wp(100), height: hp(30) },
+            fullscreen && {
+              position: "absolute",
+              width: height,
+              height: width,
+              top: wp(52.25),
+              left: -hp(25.7),
+              // backgroundColor: 'red',
+              transform: [{ rotate: "90deg" }],
+              zIndex: 1,
+            },
+          ]}
+        >
+          {error && (
+            <View
+              style={{
+                width: "100%",
+                height: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "black",
+              }}
+            >
+              <Text style={{ color: "white" }}>Coundn't load the video.</Text>
+            </View>
+          )}
+          {!error && (
+            <>
+              {video[0]?.video_type === 3 && (
+                <VideoPlayer
+                  onError={() => {
+                    setError(true);
+                  }}
+                  disableBack={true}
+                  disableVolume={true}
+                  onEnterFullscreen={() => setFullscreen(true)}
+                  onExitFullscreen={() => setFullscreen(false)}
+                  source={{ uri: video[0]?.file }}
+                  videoStyle={[
+                    fullscreen && {
+                      height: width,
+                      width: height,
+                    },
+                  ]}
+                  style={[
+                    { width: "100%", height: hp(30) },
+                    fullscreen && {
+                      // height: 1000,
+                      width: height,
+                      top: wp(0),
+                      backgroundColor: "black",
+                      // marginTop: width
+                    },
+                  ]}
+                />
+              )}
+            </>
+          )}
+        </View>
+
         {/**video */}
         {/**video */}
 
         {/**title */}
         {/**title */}
+
         <Text
           style={{
             width: wp(85),
-            color: 'black',
+            color: "black",
             fontSize: hp(2.5),
-            fontWeight: 'bold',
+            fontWeight: "bold",
             marginVertical: wp(5),
-          }}>
-          {item.title}
+          }}
+        >
+          {video[0]?.title}
         </Text>
         {/**title */}
         {/**title */}
@@ -151,8 +256,9 @@ const VideoDetails = ({navigation, route}) => {
               width: wp(85),
               fontSize: hp(2),
               width: wp(85),
-            }}>
-            {item.des}
+            }}
+          >
+            {video[0]?.description}
           </Text>
         </TouchableOpacity>
         <View style={styles.line}></View>
@@ -163,7 +269,8 @@ const VideoDetails = ({navigation, route}) => {
         {/**postComments */}
         {/**postComments */}
         <View
-          style={{width: wp(85), alignItems: 'center', flexDirection: 'row'}}>
+          style={{ width: wp(85), alignItems: "center", flexDirection: "row" }}
+        >
           <TextInput
             multiline={true}
             placeholder="Share your thoughts..."
@@ -173,13 +280,13 @@ const VideoDetails = ({navigation, route}) => {
               marginRight: wp(5),
               height: textHeight,
               maxHeight: hp(10),
-              backgroundColor: 'rgba(0,0,0,0.1)',
+              backgroundColor: "rgba(0,0,0,0.1)",
             }}
             value={comment}
-            onChange={e => {
+            onChange={(e) => {
               setComment(e.nativeEvent.text);
             }}
-            onContentSizeChange={e => {
+            onContentSizeChange={(e) => {
               console.log(e.nativeEvent.contentSize.height);
               setTextHeight(e.nativeEvent.contentSize.height);
             }}
@@ -189,15 +296,17 @@ const VideoDetails = ({navigation, route}) => {
               {
                 width: wp(16),
                 height: hp(4.8),
-                justifyContent: 'center',
-                alignItems: 'center',
+                justifyContent: "center",
+                alignItems: "center",
               },
               comment.length > 0
-                ? {backgroundColor: '#F9AD19'}
-                : {backgroundColor: 'rgba(0,0,0,0.1)'},
-            ]}>
+                ? { backgroundColor: "#F9AD19" }
+                : { backgroundColor: "rgba(0,0,0,0.1)" },
+            ]}
+          >
             <Text
-              style={{fontSize: hp(1.8), color: 'black', fontWeight: '800'}}>
+              style={{ fontSize: hp(1.8), color: "black", fontWeight: "800" }}
+            >
               POST
             </Text>
           </Pressable>
@@ -209,19 +318,21 @@ const VideoDetails = ({navigation, route}) => {
 
         {/**Comments */}
         {/**Comments */}
-        <View style={{width: wp(85)}}>
+        <View style={{ width: wp(85) }}>
           <Text
             style={{
-              color: 'black',
+              color: "black",
               fontSize: hp(2),
-              fontWeight: 'bold',
+              fontWeight: "bold",
               marginBottom: wp(5),
-            }}>
-            Comments{' '}
+            }}
+          >
+            Comments{" "}
             <Text
               style={{
-                fontWeight: 'bold',
-              }}>{`(${numberOfComments})`}</Text>
+                fontWeight: "bold",
+              }}
+            >{`(${numberOfComments})`}</Text>
           </Text>
         </View>
         <FlatList
@@ -231,7 +342,7 @@ const VideoDetails = ({navigation, route}) => {
         />
         {/**Comments */}
         {/**Comments */}
-        <View style={{width: '100%', height: hp(10)}}></View>
+        <View style={{ width: "100%", height: hp(10) }}></View>
 
         {/* <View
           // style={{marginTop: -hp(10)}}
@@ -245,9 +356,9 @@ const VideoDetails = ({navigation, route}) => {
 
 const styles = StyleSheet.create({
   line: {
-    width: '100%',
+    width: "100%",
     height: 1,
-    backgroundColor: 'rgba(0,0,0,0.25)',
+    backgroundColor: "rgba(0,0,0,0.25)",
     marginVertical: wp(5),
   },
 });

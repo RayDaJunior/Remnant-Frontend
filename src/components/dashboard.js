@@ -110,7 +110,7 @@ const Dashboard = ({ navigation }) => {
       .then((res) => res.json())
       .then((result) => {
         setLoading(false);
-        console.log(result);
+        // console.log(result);
         setNotification(result.data);
         // console.log(result);
       });
@@ -134,7 +134,7 @@ const Dashboard = ({ navigation }) => {
       .then((res) => res.json())
       .then((result) => {
         setLoading(false);
-        console.log(result[0].id);
+        // console.log(result[0].id);
         setUserId(result[0].id);
         getNotification(result[0].id);
       });
@@ -161,7 +161,7 @@ const Dashboard = ({ navigation }) => {
       .then((result) => {
         setLoading(false);
         setEventArray(result.data);
-        console.log(result.data);
+        // console.log(result.data);
       });
   }
 
@@ -196,7 +196,7 @@ const Dashboard = ({ navigation }) => {
   };
 
   const renderDashboard = ({ item }) => {
-    return <DashboardRender item={item} />;
+    return <DashboardRender item={item} navigation={navigation}/>;
   };
 
   //events
@@ -403,6 +403,9 @@ const Dashboard = ({ navigation }) => {
 
         <View style={{ flex: 1, paddingBottom: hp(10) }}>
           <FlatList
+            ListFooterComponent={()=>(
+              <View style={{width: '100%', height: hp(8)}}></View>
+            )}
             style={{paddingTop: wp(5)}}
             data={eventArray}
             renderItem={renderDashboard}
