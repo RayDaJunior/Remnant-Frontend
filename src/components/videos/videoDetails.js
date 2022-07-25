@@ -1,0 +1,255 @@
+import React, {useEffect, useState} from 'react';
+import {
+  Text,
+  View,
+  Dimensions,
+  Image,
+  StyleSheet,
+  Pressable,
+  ActivityIndicator,
+  BackHandler,
+  Alert,
+  FlatList,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
+import CustomHeader from '../../constants/header';
+import CustomHeaderTwo from '../../constants/headerTwo';
+import Footer from '../footer';
+import MobileInput from '../../constants/mobileinput';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+
+import {useDispatch} from 'react-redux';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {UPDATE_PAGE} from '../../store/actions/actions';
+
+import Feather from 'react-native-vector-icons/Feather';
+import {wp, hp} from '../../constants/styled';
+import {ScrollView} from 'react-native-gesture-handler';
+
+const width = Dimensions.get('window').width;
+const height = Dimensions.get('window').height;
+
+const VideoDetails = ({navigation, route}) => {
+  const {item} = route.params;
+  const [fullDes, setFullDes] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [comment, setComment] = useState('');
+  const [textHeight, setTextHeight] = useState(0);
+  const [numberOfComments, setNumberOfComments] = useState(4);
+  const [comments, setComments] = useState([
+    {id: 1, userName: 'John Doe', val: 'A test Comment'},
+    {id: 2, userName: 'John Doe', val: 'A test Comment'},
+    {id: 3, userName: 'John Doe', val: 'A test Comment'},
+    {id: 4, userName: 'John Doe', val: 'A test Comment'},
+    {id: 5, userName: 'John Doe', val: 'A test Comment'},
+  ]);
+
+  const renderComment = ({item}) => {
+    return (
+      <View
+        key={item.id}
+        style={{
+          width: wp(85),
+          paddingVertical: wp(5),
+          borderBottomWidth: 1,
+          borderColor: 'rgba(0,0,0,0.25)',
+        }}>
+        <Text
+          numberOfLines={1}
+          style={{fontSize: hp(2), color: 'black', fontWeight: 'bold'}}>
+          {item.userName}
+        </Text>
+        <Text
+          style={{fontSize: hp(2), color: 'black', marginVertical: wp(2.5)}}>
+          {item.val}
+        </Text>
+        <View style={{flexDirection: 'row', marginTop: wp(2.5)}}>
+          <FontAwesome5
+            name="pen"
+            color={'#F9AD19'}
+            size={hp(2)}
+            style={{marginRight: wp(5)}}
+          />
+          <FontAwesome5
+            name="trash"
+            color={'#F9AD19'}
+            size={hp(2)}
+            style={{marginRight: wp(5)}}
+          />
+        </View>
+      </View>
+    );
+  };
+
+  return (
+    <>
+      {loading && (
+        <View
+          style={{
+            position: 'absolute',
+            width: wp(100),
+            height: hp(100),
+            top: 0,
+            left: 0,
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            zIndex: 1,
+          }}>
+          <ActivityIndicator size={'large'} />
+        </View>
+      )}
+      <ScrollView
+        contentContainerStyle={{
+          width: width,
+          minHeight: height,
+          // justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <CustomHeader
+          title={'Video'}
+          // backbutton={false}
+          navigation={navigation}
+        />
+
+        {/**video */}
+        {/**video */}
+        {/* {console.log(item.thumbnail)} */}
+        <Image
+          style={{width: '100%', height: hp(30)}}
+          source={{uri: item.thumbnail}}
+        />
+        {/**video */}
+        {/**video */}
+
+        {/**title */}
+        {/**title */}
+        <Text
+          style={{
+            width: wp(85),
+            color: 'black',
+            fontSize: hp(2.5),
+            fontWeight: 'bold',
+            marginVertical: wp(5),
+          }}>
+          {item.title}
+        </Text>
+        {/**title */}
+        {/**title */}
+
+        {/**des */}
+        {/**des */}
+        <TouchableOpacity onPress={() => setFullDes(!fullDes)}>
+          <Text
+            numberOfLines={!fullDes ? 5 : 0}
+            style={{
+              width: wp(85),
+              fontSize: hp(2),
+              width: wp(85),
+            }}>
+            {item.des}
+          </Text>
+        </TouchableOpacity>
+        <View style={styles.line}></View>
+
+        {/**des */}
+        {/**des */}
+
+        {/**postComments */}
+        {/**postComments */}
+        <View
+          style={{width: wp(85), alignItems: 'center', flexDirection: 'row'}}>
+          <TextInput
+            multiline={true}
+            placeholder="Share your thoughts..."
+            style={{
+              paddingHorizontal: wp(5),
+              flex: 1,
+              marginRight: wp(5),
+              height: textHeight,
+              maxHeight: hp(10),
+              backgroundColor: 'rgba(0,0,0,0.1)',
+            }}
+            value={comment}
+            onChange={e => {
+              setComment(e.nativeEvent.text);
+            }}
+            onContentSizeChange={e => {
+              console.log(e.nativeEvent.contentSize.height);
+              setTextHeight(e.nativeEvent.contentSize.height);
+            }}
+          />
+          <Pressable
+            style={[
+              {
+                width: wp(16),
+                height: hp(4.8),
+                justifyContent: 'center',
+                alignItems: 'center',
+              },
+              comment.length > 0
+                ? {backgroundColor: '#F9AD19'}
+                : {backgroundColor: 'rgba(0,0,0,0.1)'},
+            ]}>
+            <Text
+              style={{fontSize: hp(1.8), color: 'black', fontWeight: '800'}}>
+              POST
+            </Text>
+          </Pressable>
+        </View>
+
+        <View style={styles.line}></View>
+        {/**postComments */}
+        {/**postComments */}
+
+        {/**Comments */}
+        {/**Comments */}
+        <View style={{width: wp(85)}}>
+          <Text
+            style={{
+              color: 'black',
+              fontSize: hp(2),
+              fontWeight: 'bold',
+              marginBottom: wp(5),
+            }}>
+            Comments{' '}
+            <Text
+              style={{
+                fontWeight: 'bold',
+              }}>{`(${numberOfComments})`}</Text>
+          </Text>
+        </View>
+        <FlatList
+          data={comments}
+          renderItem={renderComment}
+          keyExtractor={(item, index) => index}
+        />
+        {/**Comments */}
+        {/**Comments */}
+        <View style={{width: '100%', height: hp(10)}}></View>
+
+        {/* <View
+          // style={{marginTop: -hp(10)}}
+          style={{position: 'absolute', bottom: hp(2)}}>
+          <Footer navigation={navigation} />
+        </View> */}
+      </ScrollView>
+    </>
+  );
+};
+
+const styles = StyleSheet.create({
+  line: {
+    width: '100%',
+    height: 1,
+    backgroundColor: 'rgba(0,0,0,0.25)',
+    marginVertical: wp(5),
+  },
+});
+
+export default VideoDetails;
