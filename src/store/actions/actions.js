@@ -4,3 +4,9 @@ export const UPDATE_PAGE = val => {
       payload: val,
     };
   };
+export const UPDATE_USER = val => {
+    return {
+      type: 'UPDATE_USER',
+      payload: val,
+    };
+  };

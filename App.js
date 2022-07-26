@@ -22,6 +22,7 @@ import {Provider, useDispatch, useSelector} from 'react-redux';
 import {configureStore} from '@reduxjs/toolkit';
 import loginToken from './src/store/reducers/initialLogin';
 import pageno from './src/store/reducers/navbar';
+import userDetails from './src/store/reducers/userdetails';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 //actions
 import {RETRIVE_TOKEN, LOGIN, LOGOUT, REGISTER} from './src/store/actions/auth';
@@ -31,6 +32,7 @@ const store = configureStore({
   reducer: {
     loginToken: loginToken,
     pageno: pageno,
+    userDetails: userDetails,
   },
 });
 

@@ -29,6 +29,8 @@ import { UPDATE_PAGE } from "../store/actions/actions";
 import Feather from "react-native-vector-icons/Feather";
 import { wp, hp } from "../constants/styled";
 
+import { UPDATE_USER } from "../store/actions/actions";
+
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 
@@ -135,6 +137,7 @@ const Dashboard = ({ navigation }) => {
       .then((result) => {
         setLoading(false);
         // console.log(result[0].id);
+        dispatch(UPDATE_USER(result[0]));
         setUserId(result[0].id);
         getNotification(result[0].id);
       });

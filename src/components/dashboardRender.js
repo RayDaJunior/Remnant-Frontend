@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import FontAwesome5Icon from "react-native-vector-icons/FontAwesome5";
 import Video from "react-native-video";
 import VideoPlayer from "react-native-video-controls";
+import YoutubePlayer from "react-native-youtube-iframe";
 
 const DashboardRender = (props) => {
   const [item, setItem] = useState(props.item);
@@ -297,6 +298,119 @@ const DashboardRender = (props) => {
       )}
       {/**Event */}
       {/**Event */}
+
+      {/** YOUTUBE */}
+      {/** YOUTUBE */}
+      {item.type === "youtube" && (
+        <TouchableOpacity
+          onPress={() =>
+            props.navigation.navigate("VideoDetails", {
+              id: item.content_id,
+              userId: props.userId,
+            })
+          }
+          style={styles.container}
+        >
+          {console.log(item.link.slice(-11))}
+          <View style={styles.video}>
+            <YoutubePlayer
+              width={wp(85)}
+              height={hp(25)}
+              play={false}
+              videoId={item.link.slice(-11)}
+              onError={(e) => {
+                console.log(e);
+              }}
+              // onChangeState={onStateChange}
+            />
+            {/* <View
+              style={{
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                left: 0,
+                top: 0,
+                backgroundColor: "rgba(0,0,0,0.2)",
+              }}
+            ></View> */}
+            {/* <FontAwesome5Icon
+              name="play"
+              style={{ position: "absolute" }}
+              size={hp(5)}
+              color={"white"}
+            /> */}
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginVertical: wp(2.5),
+            }}
+          >
+            <Text
+              style={{
+                fontSize: hp(2.5),
+                fontWeight: "bold",
+              }}
+            >
+              {item.title}
+            </Text>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <Text
+                numberOfLines={1}
+                style={{
+                  color: "black",
+                  fontSize: hp(2),
+                }}
+              >
+                {item.updated_at.substring(8, 10)}
+              </Text>
+              <Text
+                style={{
+                  color: "black",
+                  fontSize: hp(2),
+                  marginHorizontal: wp(1),
+                  // marginTop: wp(2.5),
+                }}
+              >
+                {item.updated_at.substring(5, 7) === "01" && "Jan"}
+                {item.updated_at.substring(5, 7) === "02" && "Feb"}
+                {item.updated_at.substring(5, 7) === "03" && "Mar"}
+                {item.updated_at.substring(5, 7) === "04" && "Apr"}
+                {item.updated_at.substring(5, 7) === "05" && "Jun"}
+                {item.updated_at.substring(5, 7) === "06" && "Jun"}
+                {item.updated_at.substring(5, 7) === "07" && "Jul"}
+                {item.updated_at.substring(5, 7) === "08" && "Aug"}
+                {item.updated_at.substring(5, 7) === "09" && "Sep"}
+                {item.updated_at.substring(5, 7) === "10" && "Oct"}
+                {item.updated_at.substring(5, 7) === "11" && "Nov"}
+                {item.updated_at.substring(5, 7) === "12" && "Dec"}
+              </Text>
+            </View>
+          </View>
+          <Text
+            numberOfLines={4}
+            style={{ width: "100%", fontSize: hp(1.8), color: "black" }}
+          >
+            {item.description}
+          </Text>
+          <Text
+            style={{
+              width: wp(25),
+              padding: hp(1),
+              backgroundColor: "#F9AD19",
+              borderRadius: hp(2),
+              textAlign: "center",
+              marginTop: wp(5),
+            }}
+          >
+            Know more
+          </Text>
+        </TouchableOpacity>
+      )}
+      {/** YOUTUBE */}
+      {/** YOUTUBE */}
     </>
   );
 };

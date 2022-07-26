@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import {
   Text,
   View,
@@ -9,18 +9,25 @@ import {
   ActivityIndicator,
   BackHandler,
   Alert,
-  FlatList,
-  TextInput,
   TouchableOpacity,
   StatusBar,
+  RefreshControl,
+  ScrollView,
+  FlatList,
+  TextInput,
 } from "react-native";
 import CustomHeader from "../../constants/header";
 import CustomHeaderTwo from "../../constants/headerTwo";
 import Footer from "../footer";
+import RenderComment from "./renderComments";
+import TwoButton from "../../constants/twoButton";
+import CustomModal from "../../constants/customModal";
 import MobileInput from "../../constants/mobileinput";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+
+import YoutubePlayer from "react-native-youtube-iframe";
 
 import { useDispatch } from "react-redux";
 
@@ -29,7 +36,6 @@ import { UPDATE_PAGE } from "../../store/actions/actions";
 
 import Feather from "react-native-vector-icons/Feather";
 import { wp, hp } from "../../constants/styled";
-import { ScrollView } from "react-native-gesture-handler";
 import VideoPlayer from "react-native-video-controls";
 
 const width = Dimensions.get("window").width;
@@ -46,41 +52,56 @@ const VideoDetails = ({ navigation, route }) => {
   const [textHeight, setTextHeight] = useState(0);
   const [numberOfComments, setNumberOfComments] = useState(0);
   const [comments, setComments] = useState([]);
+  const [refreshing, setRefreshing] = useState(false);
+  const [key, setKey] = useState(1);
+
+  const wait = (timeout) => {
+    return new Promise((resolve) => setTimeout(resolve, timeout));
+  };
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    getVideoDetails();
+    getCOmments();
+    setError(false);
+    setKey(key + 1);
+    wait(2000).then(() => setRefreshing(false));
+  }, []);
 
   useEffect(() => {
-    const getVideoDetails = async () => {
-      setLoading(true);
-      const TOKEN = await AsyncStorage.getItem("userToken");
-      // console.log(userId);
-
-      const header = {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${TOKEN}`,
-      };
-
-      await fetch(
-        `http://ec2-52-53-161-255.us-west-1.compute.amazonaws.com/api/video_description`,
-        {
-          method: "POST",
-          headers: header,
-          body: JSON.stringify({
-            id: id,
-          }),
-        }
-      )
-        .then((res) => res.json())
-        .then((result) => {
-          setLoading(false);
-          console.warn(result, "==des");
-          setVideo(result.data);
-          // console.log(result);
-        });
-    };
-
     getVideoDetails();
     getCOmments();
   }, []);
+
+  const getVideoDetails = async () => {
+    setLoading(true);
+    const TOKEN = await AsyncStorage.getItem("userToken");
+    // console.log(userId);
+
+    const header = {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${TOKEN}`,
+    };
+
+    await fetch(
+      `http://ec2-52-53-161-255.us-west-1.compute.amazonaws.com/api/video_description`,
+      {
+        method: "POST",
+        headers: header,
+        body: JSON.stringify({
+          id: id,
+        }),
+      }
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        setLoading(false);
+        // console.warn(result, "==des");
+        setVideo(result.data);
+        // console.log(result);
+      });
+  };
 
   const getCOmments = async () => {
     setLoading(true);
@@ -106,7 +127,7 @@ const VideoDetails = ({ navigation, route }) => {
       .then((res) => res.json())
       .then((result) => {
         setLoading(false);
-        console.warn(result, "==comments");
+        // console.warn(result, "==comments");
         setComments(result.data);
         // console.log(result);
       });
@@ -140,7 +161,7 @@ const VideoDetails = ({ navigation, route }) => {
       .then((result) => {
         setLoading(false);
         setComment("");
-        console.warn(result, "==commentsPOST");
+        // console.warn(result, "==commentsPOST");
         getCOmments();
         // console.log(result);
       });
@@ -148,41 +169,11 @@ const VideoDetails = ({ navigation, route }) => {
 
   const renderComment = ({ item }) => {
     return (
-      <View
-        key={item.id}
-        style={{
-          width: wp(85),
-          paddingVertical: wp(5),
-          borderBottomWidth: 1,
-          borderColor: "rgba(0,0,0,0.25)",
-        }}
-      >
-        <Text
-          numberOfLines={1}
-          style={{ fontSize: hp(2), color: "black", fontWeight: "bold" }}
-        >
-          {item.user_id}
-        </Text>
-        <Text
-          style={{ fontSize: hp(2), color: "black", marginVertical: wp(2.5) }}
-        >
-          {item.comment}
-        </Text>
-        <View style={{ flexDirection: "row", marginTop: wp(2.5) }}>
-          <FontAwesome5
-            name="pen"
-            color={"#F9AD19"}
-            size={hp(2)}
-            style={{ marginRight: wp(5) }}
-          />
-          <FontAwesome5
-            name="trash"
-            color={"#F9AD19"}
-            size={hp(2)}
-            style={{ marginRight: wp(5) }}
-          />
-        </View>
-      </View>
+      <RenderComment
+        item={item}
+        setLoading={setLoading}
+        getCOmments={getCOmments}
+      />
     );
   };
 
@@ -208,6 +199,9 @@ const VideoDetails = ({ navigation, route }) => {
         </View>
       )}
       <ScrollView
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
         contentContainerStyle={{
           width: width,
           minHeight: height,
@@ -254,8 +248,21 @@ const VideoDetails = ({ navigation, route }) => {
           )}
           {!error && (
             <>
+              {video[0]?.video_type === 1 && (
+                <YoutubePlayer
+                  width={wp(100)}
+                  height={hp(30)}
+                  play={true}
+                  videoId={video[0]?.links.slice(-11)}
+                  onError={(e) => {
+                    console.log(e);
+                  }}
+                  // onChangeState={onStateChange}
+                />
+              )}
               {video[0]?.video_type === 3 && (
                 <VideoPlayer
+                  key={key}
                   onError={() => {
                     setError(true);
                   }}
