@@ -1,0 +1,6 @@
+module Pods_remnant {
+  umbrella header "Pods-remnant-umbrella.h"
+
+  export *
+  module * { export * }
+}
